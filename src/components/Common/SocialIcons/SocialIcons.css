@@ -1,0 +1,28 @@
+.social-icons {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.social-icon-link {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #121218;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #b6b6b6;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.social-icon-link:hover {
+  background: #6c63ff;
+  color: #fff;
+  border-color: #6c63ff;
+  transform: translateY(-2px);
+  box-shadow: 0 0 15px rgba(108, 99, 255, 0.3);
+}
