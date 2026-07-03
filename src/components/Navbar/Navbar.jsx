@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { FaBars } from "react-icons/fa";
+import { Link } from "react-scroll";
 import Logo from "./Logo";
 import NavLinks from "./NavLinks";
 import MobileMenu from "./MobileMenu";
@@ -28,9 +29,9 @@ function Navbar() {
           <Logo />
           <nav className="hidden lg:flex items-center gap-10">
             <NavLinks />
-            <button className="px-6 py-3 rounded-full bg-violet-600 hover:bg-violet-700 transition">
-              Resume
-            </button>
+            <Link to="contact" smooth duration={600} offset={-90} className="px-6 py-3 rounded-full bg-violet-600 hover:bg-violet-700 transition cursor-pointer">
+              Let's Talk
+            </Link>
           </nav>
           <button onClick={() => setIsOpen(true)} className="lg:hidden">
             <FaBars size={22} />
