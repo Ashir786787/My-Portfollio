@@ -1,13 +1,17 @@
+import SectionWrapper from "../Common/SectionWrapper/SectionWrapper";
+import SectionTitle from "../Common/SectionTitle/SectionTitle";
+import ContactForm from "./ContactForm";
+import ContactInfo from "./ContactInfo";
+
 function Contact() {
   return (
-    <section
-      id="contact"
-      className="min-h-screen flex items-center justify-center bg-[#0B0B0F]"
-    >
-      <h1 className="text-5xl font-bold">
-        Contact
-      </h1>
-    </section>
+    <SectionWrapper id="contact">
+      <SectionTitle title="Get In Touch" subtitle="Let's Build Something Amazing" />
+      <div className="grid lg:grid-cols-2 gap-12 mt-16">
+        <ContactForm />
+        <ContactInfo />
+      </div>
+    </SectionWrapper>
   );
 }
 

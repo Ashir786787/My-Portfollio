@@ -1,29 +1,33 @@
 import { TypeAnimation } from "react-type-animation";
-import { portfolio } from "../../data/portfolio";
+import HeroBadge from "./HeroBadge";
+import HeroButtons from "./HeroButtons";
+import HeroSocials from "./HeroSocials";
+import { hero } from "../../data/hero";
 
 function HeroContent() {
   return (
-    <div className="max-w-2xl">
-      <p className="text-purple-400 text-lg font-medium mb-4">👋 Hello, I'm</p>
-      <h1 className="text-5xl md:text-6xl xl:text-7xl font-extrabold leading-tight">
-        {portfolio.name}
+    <div>
+      <HeroBadge />
+      <p className="mt-8 text-violet-400 uppercase tracking-[6px] text-sm">
+        {hero.greeting}
+      </p>
+      <h1 className="mt-6 text-5xl md:text-6xl xl:text-7xl font-black leading-[0.95] tracking-tight">
+        {hero.firstName}
+        <br />
+        <span className="text-violet-500">{hero.lastName}</span>
       </h1>
-      <div className="mt-6 h-14 text-2xl md:text-3xl font-semibold text-cyan-400">
+      <div className="mt-8 h-10 text-2xl md:text-3xl font-semibold text-cyan-400">
         <TypeAnimation
-          sequence={portfolio.roles.flatMap((role) => [role, 1800])}
+          sequence={hero.roles}
           speed={50}
           repeat={Infinity}
         />
       </div>
-      <p className="mt-8 text-gray-400 leading-8 text-lg">{portfolio.intro}</p>
-      <div className="mt-10 flex flex-wrap gap-5">
-        <button className="px-8 py-4 rounded-xl bg-purple-600 hover:bg-purple-700 transition-all duration-300 font-semibold">
-          Hire Me
-        </button>
-        <button className="px-8 py-4 rounded-xl border border-purple-500 hover:bg-purple-500 transition-all duration-300 font-semibold">
-          View Projects
-        </button>
-      </div>
+      <p className="mt-8 max-w-xl text-gray-400 leading-8 text-lg">
+        I build modern, scalable, and high-performance web applications using the MERN stack. Passionate about crafting intuitive user experiences, writing clean and maintainable code, and transforming ideas into powerful digital products that make a real impact.
+      </p>
+      <HeroButtons />
+      <HeroSocials />
     </div>
   );
 }

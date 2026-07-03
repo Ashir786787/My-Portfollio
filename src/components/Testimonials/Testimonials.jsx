@@ -1,13 +1,18 @@
+import testimonials from "../../data/testimonials";
+import SectionWrapper from "../Common/SectionWrapper/SectionWrapper";
+import SectionTitle from "../Common/SectionTitle/SectionTitle";
+import TestimonialCard from "./TestimonialCard";
+
 function Testimonials() {
   return (
-    <section
-      id="testimonials"
-      className="min-h-screen flex items-center justify-center bg-[#07070B]"
-    >
-      <h1 className="text-5xl font-bold">
-        Testimonials
-      </h1>
-    </section>
+    <SectionWrapper id="testimonials">
+      <SectionTitle title="Testimonials" subtitle="What People Say" />
+      <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8 mt-16">
+        {testimonials.map((testimonial, index) => (
+          <TestimonialCard key={index} {...testimonial} />
+        ))}
+      </div>
+    </SectionWrapper>
   );
 }
 

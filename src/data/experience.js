@@ -1,23 +1,20 @@
-export const experience = [
+export const experiences = [
   {
-    type: "education",
-    title: "Computer Science Degree",
-    organization: "University Name",
-    duration: "2020 - 2024",
-    description: "Bachelor of Science in Computer Science with focus on web development and software engineering.",
+    year: "2026 - Present",
+    company: "ML Bench",
+    role: "MERN Stack Developer Intern",
+    description: "Building responsive React applications, integrating REST APIs, collaborating with developers, and improving UI/UX for production-ready web applications.",
   },
   {
-    type: "work",
-    title: "Full Stack Developer Intern",
-    organization: "Company Name",
-    duration: "2024 - Present",
-    description: "Building and maintaining web applications using the MERN stack. Collaborating with cross-functional teams.",
+    year: "2025",
+    company: "Freelance",
+    role: "Frontend Developer",
+    description: "Developed responsive portfolio websites, landing pages, dashboards, and React applications for clients.",
   },
   {
-    type: "freelance",
-    title: "Freelance Web Developer",
-    organization: "Self-Employed",
-    duration: "2023 - Present",
-    description: "Developing custom websites and web applications for various clients. Delivering high-quality solutions.",
+    year: "2024",
+    company: "University Projects",
+    role: "Full Stack Developer",
+    description: "Built MERN applications including authentication systems, CRUD dashboards, and portfolio websites.",
   },
 ];

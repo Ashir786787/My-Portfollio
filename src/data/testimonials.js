@@ -1,14 +1,25 @@
-export const testimonials = [
+const testimonials = [
   {
-    name: "Client Name",
-    role: "CEO, Company",
-    review: "An exceptional developer who delivered beyond expectations. Highly recommended.",
-    avatar: "",
+    name: "John Anderson",
+    role: "Startup Founder",
+    feedback:
+      "Muhammad Ashir delivered an outstanding website with clean code, excellent communication, and a professional attitude. Highly recommended.",
+    rating: 5,
   },
   {
-    name: "Client Name",
-    role: "Project Manager",
-    review: "Professional, skilled, and a pleasure to work with. The results speak for themselves.",
-    avatar: "",
+    name: "Sarah Williams",
+    role: "UI/UX Designer",
+    feedback:
+      "Working together was a great experience. His attention to detail and ability to build responsive interfaces exceeded expectations.",
+    rating: 5,
+  },
+  {
+    name: "Michael Brown",
+    role: "Business Owner",
+    feedback:
+      "Professional, reliable, and highly skilled. The project was completed on time with exceptional quality.",
+    rating: 5,
   },
 ];
+
+export default testimonials;

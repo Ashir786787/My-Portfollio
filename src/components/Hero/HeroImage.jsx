@@ -1,18 +1,34 @@
 import profile from "../../assets/images/profile/ashir.png";
+import HeroStats from "./HeroStats";
+import { motion } from "framer-motion";
 
 function HeroImage() {
   return (
-    <div className="flex justify-center lg:justify-end">
-      <div className="relative">
-        <div className="absolute inset-0 bg-purple-600 blur-[120px] opacity-30 rounded-full" />
-        <div className="absolute -top-10 -right-10 w-40 h-40 bg-cyan-500 blur-[100px] opacity-20 rounded-full" />
-        <img
+    <motion.div
+      initial={{ opacity: 0, x: 80 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.9 }}
+      className="relative flex justify-center items-center"
+    >
+      <div className="relative w-full max-w-[760px] h-[720px] flex items-end justify-center">
+        <div className="absolute bottom-16 w-[420px] h-[420px] rounded-full bg-violet-600/25 blur-[140px]" />
+        <HeroStats />
+        <motion.img
+          animate={{
+            y: [0, -10, 0],
+            rotate: [0, 1, 0, -1, 0],
+          }}
+          transition={{
+            duration: 8,
+            repeat: Infinity,
+            ease: "easeInOut",
+          }}
           src={profile}
           alt="Muhammad Ashir"
-          className="relative z-10 w-[320px] md:w-[420px] lg:w-[500px] rounded-[30px] object-cover"
+          className="relative z-20 max-h-[720px] w-auto object-contain drop-shadow-[0_40px_80px_rgba(124,58,237,.45)]"
         />
       </div>
-    </div>
+    </motion.div>
   );
 }
 
