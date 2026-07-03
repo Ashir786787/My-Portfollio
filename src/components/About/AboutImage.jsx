@@ -15,7 +15,7 @@ function AboutImage() {
         <img
           src={profile}
           alt="Muhammad Ashir"
-          className="relative z-10 w-[380px] rounded-3xl border border-white/10 shadow-2xl"
+          className="relative z-10 w-full max-w-[320px] sm:max-w-[380px] rounded-3xl border border-white/10 shadow-2xl"
         />
       </div>
     </motion.div>

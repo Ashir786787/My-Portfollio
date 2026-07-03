@@ -10,8 +10,8 @@ function HeroImage() {
       transition={{ duration: 0.9 }}
       className="relative flex justify-center items-center"
     >
-      <div className="relative w-full max-w-[760px] h-[720px] flex items-end justify-center">
-        <div className="absolute bottom-16 w-[420px] h-[420px] rounded-full bg-violet-600/25 blur-[140px]" />
+      <div className="relative w-full max-w-[760px] h-[400px] lg:h-[720px] flex items-center lg:items-end justify-center">
+        <div className="absolute bottom-16 w-[280px] h-[280px] lg:w-[420px] lg:h-[420px] rounded-full bg-violet-600/25 blur-[140px]" />
         <HeroStats />
         <motion.img
           animate={{
@@ -25,7 +25,7 @@ function HeroImage() {
           }}
           src={profile}
           alt="Muhammad Ashir"
-          className="relative z-20 max-h-[720px] w-auto object-contain drop-shadow-[0_40px_80px_rgba(124,58,237,.45)]"
+          className="relative z-20 max-h-[400px] lg:max-h-[720px] w-auto object-contain drop-shadow-[0_40px_80px_rgba(124,58,237,.45)]"
         />
       </div>
     </motion.div>

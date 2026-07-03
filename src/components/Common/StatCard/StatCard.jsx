@@ -5,10 +5,10 @@ function StatCard({ number, label }) {
     <motion.div
       whileHover={{ y: -8, scale: 1.03 }}
       transition={{ duration: 0.3 }}
-      className="bg-white/5 border border-white/10 backdrop-blur-xl rounded-2xl p-6 text-center shadow-lg"
+      className="bg-white/5 border border-white/10 backdrop-blur-xl rounded-2xl p-4 sm:p-6 text-center shadow-lg"
     >
-      <h3 className="text-4xl font-bold text-violet-400">{number}</h3>
-      <p className="mt-2 text-gray-400">{label}</p>
+      <h3 className="text-2xl sm:text-4xl font-bold text-violet-400">{number}</h3>
+      <p className="mt-2 text-gray-400 text-sm sm:text-base">{label}</p>
     </motion.div>
   );
 }
