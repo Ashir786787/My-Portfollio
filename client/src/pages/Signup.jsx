@@ -34,7 +34,7 @@ function Signup() {
         setDevCode(res.devCode);
       }
       setTimeout(
-        () => navigate(`/verify-code?userId=${res.userId}&email=${form.email}`),
+        () => navigate(`/verify-code?userId=${res.userId}&email=${form.email}&devCode=${res.devCode || ""}`),
         1500
       );
     } catch (err) {

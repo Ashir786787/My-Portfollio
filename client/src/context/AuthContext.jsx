@@ -43,12 +43,6 @@ export const AuthProvider = ({ children }) => {
 
   const login = async (data) => {
     const res = await loginApi(data);
-    if (res.needsVerification) {
-      const err = new Error(res.message);
-      err.needsVerification = true;
-      err.userId = res.userId;
-      throw err;
-    }
     saveAuth(res.token, res.user);
     return res;
   };

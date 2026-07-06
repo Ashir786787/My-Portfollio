@@ -25,13 +25,7 @@ function Login() {
       await login(form);
       navigate("/");
     } catch (err) {
-      if (err.needsVerification) {
-        navigate(
-          `/verify-code?userId=${err.userId}&email=${form.email}`
-        );
-      } else {
-        setError(err.message || "Login failed. Please try again.");
-      }
+      setError(err.message || "Login failed. Please try again.");
     } finally {
       setLoading(false);
     }
