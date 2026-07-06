@@ -4,6 +4,8 @@ const transporter = nodemailer.createTransport({
   host: "smtp-relay.brevo.com",
   port: 587,
   secure: false,
+  connectionTimeout: 5000,
+  greetingTimeout: 5000,
   auth: {
     user: "b11927001@smtp-brevo.com",
     pass: process.env.EMAIL_PASS,
@@ -17,8 +19,6 @@ const sendEmail = async (to, subject, html) => {
     subject,
     html,
   });
-
-  console.log(`✅ Email sent to ${to} via Brevo`);
 };
 
 export default sendEmail;

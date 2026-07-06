@@ -53,11 +53,8 @@ export const signup = async (req, res) => {
       </div>
     `;
 
-    try {
-      await sendEmail(email, "Your Portfolio Verification Code", codeEmailHtml);
-    } catch (emailError) {
-      console.error(`Email to ${email} failed:`, emailError);
-    }
+    sendEmail(email, "Your Portfolio Verification Code", codeEmailHtml)
+      .catch((err) => console.error(`Email to ${email} failed:`, err));
 
     console.log(`Verification code for ${email}: ${verificationCode}`);
 
@@ -72,15 +69,8 @@ export const signup = async (req, res) => {
       </div>
     `;
 
-    try {
-      await sendEmail(
-        process.env.EMAIL_USER,
-        "New Portfolio Registration",
-        adminHtml
-      );
-    } catch (adminEmailError) {
-      console.log("Admin notification email failed");
-    }
+    sendEmail(process.env.EMAIL_USER, "New Portfolio Registration", adminHtml)
+      .catch(() => {});
 
     res.status(201).json({
       success: true,
@@ -89,7 +79,7 @@ export const signup = async (req, res) => {
       devCode: verificationCode,
     });
   } catch (error) {
-    console.error(error);
+    console.error("Signup error:", error);
 
     res.status(500).json({
       success: false,
@@ -279,11 +269,8 @@ export const resendCode = async (req, res) => {
       </div>
     `;
 
-    try {
-      await sendEmail(user.email, "New Verification Code", codeEmailHtml);
-    } catch (emailError) {
-      console.log("Resend email failed, new code:", newCode);
-    }
+    sendEmail(user.email, "New Verification Code", codeEmailHtml)
+      .catch((err) => console.error("Resend email failed:", err));
 
     console.log(`New verification code for ${user.email}: ${newCode}`);
 
