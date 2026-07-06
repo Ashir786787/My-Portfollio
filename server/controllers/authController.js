@@ -56,7 +56,7 @@ export const signup = async (req, res) => {
     try {
       await sendEmail(email, "Your Portfolio Verification Code", codeEmailHtml);
     } catch (emailError) {
-      console.log(`Email to ${email} failed:`, emailError.message);
+      console.error(`Email to ${email} failed:`, emailError);
     }
 
     console.log(`Verification code for ${email}: ${verificationCode}`);

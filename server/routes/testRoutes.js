@@ -20,9 +20,10 @@ router.get("/email", async (req, res) => {
     });
 
   } catch (error) {
+    console.error("Email test failed:", error);
     res.status(500).json({
       success: false,
-      message: "Failed to send email.",
+      message: `Email failed: ${error.message}`,
     });
   }
 });
