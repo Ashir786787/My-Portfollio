@@ -6,7 +6,6 @@ function Signup() {
   const [form, setForm] = useState({ fullName: "", email: "", password: "" });
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
-  const [devCode, setDevCode] = useState("");
   const [loading, setLoading] = useState(false);
   const { signup } = useAuth();
   const navigate = useNavigate();
@@ -30,11 +29,8 @@ function Signup() {
     try {
       const res = await signup(form);
       setSuccess(res.message || "Account created!");
-      if (res.devCode) {
-        setDevCode(res.devCode);
-      }
       setTimeout(
-        () => navigate(`/verify-code?userId=${res.userId}&email=${form.email}&devCode=${res.devCode || ""}`),
+        () => navigate(`/verify-code?userId=${res.userId}&email=${form.email}`),
         1500
       );
     } catch (err) {
@@ -62,14 +58,6 @@ function Signup() {
         {success && (
           <div className="mb-6 p-4 rounded-xl bg-green-500/10 border border-green-500/20 text-green-400 text-sm">
             {success}
-            {devCode && (
-              <div className="mt-3 text-center">
-                <p className="text-gray-400 text-xs mb-1">DEV MODE — Your code:</p>
-                <span className="text-2xl font-bold tracking-[8px] text-violet-400">
-                  {devCode}
-                </span>
-              </div>
-            )}
           </div>
         )}
 

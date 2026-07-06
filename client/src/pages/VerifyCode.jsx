@@ -12,7 +12,6 @@ function VerifyCode() {
   const [digits, setDigits] = useState(["", "", "", "", "", ""]);
   const [error, setError] = useState("");
   const [message, setMessage] = useState("");
-  const [devCode, setDevCode] = useState("");
   const [loading, setLoading] = useState(false);
   const [resending, setResending] = useState(false);
 
@@ -21,11 +20,6 @@ function VerifyCode() {
   useEffect(() => {
     if (!userId) {
       setError("Invalid verification link.");
-    }
-    const code = searchParams.get("devCode");
-    if (code) {
-      setDevCode(code);
-      setDigits(code.split(""));
     }
   }, [userId]);
 
@@ -142,13 +136,6 @@ function VerifyCode() {
         {message && (
           <div className="mb-6 p-4 rounded-xl bg-green-500/10 border border-green-500/20 text-green-400 text-sm">
             {message}
-          </div>
-        )}
-
-        {devCode && (
-          <div className="mb-6 p-4 rounded-xl bg-amber-500/10 border border-amber-500/20 text-amber-400 text-sm text-center">
-            <p className="text-xs mb-1">DEV MODE — Your code (auto-filled):</p>
-            <span className="text-2xl font-bold tracking-[8px]">{devCode}</span>
           </div>
         )}
 
