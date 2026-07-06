@@ -3,9 +3,6 @@ dist
 dist-ssr
 *.local
 
-server/.env
-server/node_modules
-
 .vscode/*
 !.vscode/extensions.json
 .idea
