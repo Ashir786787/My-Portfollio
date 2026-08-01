@@ -1,10 +1,9 @@
 import { Router } from "express";
 import { createContact, getContacts } from "../controllers/contactController.js";
-import { protect } from "../middleware/authMiddleware.js";
 
 const router = Router();
 
 router.post("/", createContact);
-router.get("/", protect, getContacts);
+router.get("/", getContacts);
 
 export default router;

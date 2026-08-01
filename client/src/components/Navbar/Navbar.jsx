@@ -5,12 +5,11 @@ import { Link } from "react-router-dom";
 import Logo from "./Logo";
 import NavLinks from "./NavLinks";
 import MobileMenu from "./MobileMenu";
-import { useAuth } from "../../context/AuthContext.jsx";
 
 function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
-  const { user, logout } = useAuth();
+  // Auth removed for portfolio; no user state
 
   useEffect(() => {
     const handleScroll = () => {
@@ -32,26 +31,11 @@ function Navbar() {
           <Logo />
           <nav className="hidden lg:flex items-center gap-6">
             <NavLinks />
-            {user ? (
-              <div className="flex items-center gap-4">
-                <span className="text-sm text-gray-300">{user.fullName}</span>
-                <button onClick={logout} className="text-sm text-gray-400 hover:text-red-400 transition cursor-pointer">
-                  Logout
-                </button>
-              </div>
-            ) : (
-              <div className="flex items-center gap-3">
-                <Link to="/login" className="text-sm text-gray-300 hover:text-violet-400 transition">
-                  Login
-                </Link>
-                <Link to="/signup" className="text-sm px-4 py-2 rounded-full bg-violet-600 hover:bg-violet-700 transition text-white">
-                  Sign Up
-                </Link>
-              </div>
-            )}
-            <ScrollLink to="contact" smooth duration={600} offset={-90} className="px-6 py-3 rounded-full bg-violet-600 hover:bg-violet-700 transition cursor-pointer">
-              Let's Talk
-            </ScrollLink>
+            <div className="flex items-center gap-3">
+              <ScrollLink to="contact" smooth duration={600} offset={-90} className="px-6 py-3 rounded-full bg-violet-600 hover:bg-violet-700 transition cursor-pointer">
+                Let's Talk
+              </ScrollLink>
+            </div>
           </nav>
           <button onClick={() => setIsOpen(true)} className="lg:hidden">
             <FaBars size={22} />

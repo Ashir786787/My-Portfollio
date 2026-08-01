@@ -5,7 +5,6 @@ import { fileURLToPath } from "url";
 import { dirname, join } from "path";
 
 import connectDB from "./config/db.js";
-import authRoutes from "./routes/authRoutes.js";
 import contactRoutes from "./routes/contactRoutes.js";
 import testRoutes from "./routes/testRoutes.js";
 
@@ -22,7 +21,6 @@ app.use(cors());
 
 app.use(express.json());
 
-app.use("/api/auth", authRoutes);
 app.use("/api/contact", contactRoutes);
 app.use("/api/test", testRoutes);
 
