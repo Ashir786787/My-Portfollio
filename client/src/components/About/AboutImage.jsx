@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { FaCode } from "react-icons/fa";
-import profile from "../../assets/images/profile/ashir-portrait.png";
+import profile from "../../assets/images/profile/ashir-portrait.webp";
 
 function AboutImage() {
   return (

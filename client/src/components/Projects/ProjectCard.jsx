@@ -79,7 +79,7 @@ function ProjectCard({
                 href={live}
                 target={live.startsWith("http") ? "_blank" : undefined}
                 rel="noreferrer"
-                className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-3.5 py-2 text-xs font-medium text-white/75 transition hover:border-violet-400/40 hover:bg-violet-500/10 hover:text-white"
+                className="inline-flex min-h-[2.75rem] items-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-4 py-2 text-xs font-medium text-white/75 transition hover:border-violet-400/40 hover:bg-violet-500/10 hover:text-white sm:px-3.5"
               >
                 <FiExternalLink className="text-[0.7rem]" />
                 Live demo
@@ -90,7 +90,7 @@ function ProjectCard({
                 href={github}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-3.5 py-2 text-xs font-medium text-white/75 transition hover:border-violet-400/40 hover:bg-violet-500/10 hover:text-white"
+                className="inline-flex min-h-[2.75rem] items-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-4 py-2 text-xs font-medium text-white/75 transition hover:border-violet-400/40 hover:bg-violet-500/10 hover:text-white sm:px-3.5"
               >
                 <FiGithub className="text-[0.75rem]" />
                 Code

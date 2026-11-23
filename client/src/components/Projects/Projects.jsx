@@ -45,7 +45,7 @@ function Projects() {
               type="button"
               aria-pressed={active === category}
               onClick={() => setActive(category)}
-              className={`rounded-full border px-3.5 py-2 text-xs font-medium transition duration-300 ${
+              className={`min-h-[2.75rem] rounded-full border px-4 py-2 text-xs font-medium transition duration-300 sm:min-h-0 sm:px-3.5 ${
                 active === category
                   ? "border-violet-400/50 bg-violet-500/15 text-white shadow-[0_0_20px_-8px_rgba(124,92,255,0.9)]"
                   : "border-white/[0.08] bg-white/[0.02] text-white/55 hover:border-white/20 hover:text-white/80"

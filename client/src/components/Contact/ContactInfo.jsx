@@ -28,7 +28,7 @@ function ContactInfo() {
                 {item.href ? (
                   <a
                     href={item.href}
-                    className="mt-1 block break-words text-[0.82rem] font-medium text-white/85 transition hover:text-violet-300"
+                    className="mt-1 inline-flex min-h-[2.5rem] items-center break-words text-[0.82rem] font-medium text-white/85 transition hover:text-violet-300"
                   >
                     {item.value}
                   </a>
@@ -64,7 +64,7 @@ function ContactInfo() {
               target="_blank"
               rel="noreferrer"
               aria-label={label}
-              className="flex h-9 w-9 items-center justify-center rounded-full border border-white/10 bg-white/[0.04] text-white/60 transition hover:-translate-y-0.5 hover:border-violet-400/40 hover:text-white"
+              className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/[0.04] text-white/60 transition hover:-translate-y-0.5 hover:border-violet-400/40 hover:text-white sm:h-9 sm:w-9"
             >
               <Icon className="text-sm" />
             </a>
@@ -74,7 +74,7 @@ function ContactInfo() {
 
       <a
         href={`mailto:${portfolio.email}`}
-        className="group mt-6 inline-flex items-center gap-2 text-sm font-medium text-violet-300 transition hover:text-violet-200"
+        className="group mt-6 inline-flex min-h-[2.75rem] items-center gap-2 text-sm font-medium text-violet-300 transition hover:text-violet-200"
       >
         Prefer email? Write to me directly
         <FaArrowRight className="text-xs transition-transform duration-300 group-hover:translate-x-1" />

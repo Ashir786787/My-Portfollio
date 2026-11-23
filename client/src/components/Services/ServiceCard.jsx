@@ -54,7 +54,7 @@ function ServiceCard({ image, title, description, points = [], index = 0 }) {
           smooth
           duration={650}
           offset={-96}
-          className="group/link inline-flex cursor-pointer items-center gap-2 text-xs font-semibold text-violet-300 transition hover:text-violet-200"
+          className="group/link inline-flex min-h-[2.75rem] cursor-pointer items-center gap-2 text-xs font-semibold text-violet-300 transition hover:text-violet-200"
         >
           Discuss this service
           <FaArrowRight className="text-[0.6rem] transition-transform duration-300 group-hover/link:translate-x-1" />

@@ -40,7 +40,7 @@ function Footer() {
                   target={href.startsWith("http") ? "_blank" : undefined}
                   rel="noreferrer"
                   aria-label={label}
-                  className="flex h-9 w-9 items-center justify-center rounded-full border border-white/[0.08] bg-white/[0.03] text-white/50 transition hover:-translate-y-0.5 hover:border-violet-400/40 hover:text-white"
+                  className="flex h-11 w-11 items-center justify-center rounded-full border border-white/[0.08] bg-white/[0.03] text-white/50 transition hover:-translate-y-0.5 hover:border-violet-400/40 hover:text-white sm:h-9 sm:w-9"
                 >
                   <Icon className="text-xs" />
                 </a>
@@ -61,7 +61,7 @@ function Footer() {
                     spy
                     duration={600}
                     offset={-96}
-                    className="cursor-pointer text-xs text-white/55 transition hover:text-white"
+                    className="inline-flex min-h-[2.75rem] cursor-pointer items-center px-2 text-xs text-white/55 transition hover:text-white"
                   >
                     {item.title}
                   </ScrollLink>
@@ -78,7 +78,7 @@ function Footer() {
               <li>
                 <a
                   href={`mailto:${portfolio.email}`}
-                  className="transition hover:text-white"
+                  className="inline-flex min-h-[2.75rem] items-center transition hover:text-white"
                 >
                   {portfolio.email}
                 </a>
@@ -111,7 +111,7 @@ function Footer() {
           <button
             type="button"
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            className="group flex items-center gap-2 text-[0.68rem] font-medium text-white/50 transition hover:text-white"
+            className="group inline-flex min-h-[2.75rem] items-center gap-2 text-[0.68rem] font-medium text-white/50 transition hover:text-white"
           >
             Back to top
             <span className="flex h-7 w-7 items-center justify-center rounded-full border border-white/10 bg-white/[0.03] transition group-hover:-translate-y-0.5 group-hover:border-violet-400/40">

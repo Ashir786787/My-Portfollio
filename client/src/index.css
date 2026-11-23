@@ -98,7 +98,7 @@
   /* Layout helpers ------------------------------------------------------ */
   .section-shell {
     position: relative;
-    padding-block: clamp(4.5rem, 9vw, 7.5rem);
+    padding-block: clamp(3.25rem, 9vw, 7.5rem);
   }
 
   .container-shell {
@@ -238,6 +238,7 @@
   }
 
   .btn-sm {
+    min-height: 2.75rem;
     padding: 0.7rem 1.15rem;
     font-size: 0.8rem;
   }

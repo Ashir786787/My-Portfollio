@@ -18,7 +18,7 @@ function TechMarquee() {
   const items = [...technologies, ...technologies];
 
   return (
-    <div className="relative overflow-hidden border-y border-white/[0.06] bg-white/[0.015] py-5">
+    <div className="relative overflow-hidden border-y border-white/[0.06] bg-white/[0.015] py-4">
       <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-16 bg-gradient-to-r from-base to-transparent sm:w-28" />
       <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-16 bg-gradient-to-l from-base to-transparent sm:w-28" />
       <div className="marquee-group flex" aria-label="Technologies I work with">

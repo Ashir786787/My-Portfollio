@@ -4,7 +4,7 @@ function Logo({ onClick }) {
       href="#home"
       onClick={onClick}
       aria-label="Muhammad Ashir — home"
-      className="group flex items-center gap-2.5"
+      className="group inline-flex min-h-[2.75rem] items-center gap-2.5"
     >
       <span className="relative flex h-9 w-9 items-center justify-center overflow-hidden rounded-xl border border-white/10 bg-gradient-to-br from-violet-500/30 to-cyan-400/20 sm:h-10 sm:w-10">
         <span className="font-display text-sm font-bold tracking-tight text-white">
