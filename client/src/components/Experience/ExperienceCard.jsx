@@ -12,7 +12,7 @@ function ExperienceCard({ item, index = 0 }) {
     >
       <span
         aria-hidden="true"
-        className="absolute left-0 top-6 flex h-[15px] w-[15px] items-center justify-center rounded-full border-2 border-violet-400 bg-base shadow-[0_0_16px_2px_rgba(124,92,255,0.5)] sm:h-[19px] sm:w-[19px]"
+        className="absolute left-0 top-6 flex h-[15px] w-[15px] items-center justify-center rounded-full border-2 border-violet-400 bg-canvas shadow-[0_0_16px_2px_rgba(124,92,255,0.5)] sm:h-[19px] sm:w-[19px]"
       >
         <span className="h-1.5 w-1.5 rounded-full bg-violet-300 sm:h-2 sm:w-2" />
       </span>

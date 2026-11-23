@@ -58,7 +58,7 @@ function HeroContent() {
 
       <motion.p
         variants={item}
-        className="mt-6 max-w-xl text-sm leading-7 text-white/55 sm:text-base sm:leading-8"
+        className="mt-6 max-w-xl text-[0.95rem] leading-7 text-white/75 sm:text-base sm:leading-8"
       >
         {hero.description}
       </motion.p>

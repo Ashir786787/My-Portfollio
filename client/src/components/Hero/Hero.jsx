@@ -20,7 +20,7 @@ function Hero() {
       />
       <div
         aria-hidden="true"
-        className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-base to-transparent"
+        className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-canvas to-transparent"
       />
 
       <Container className="relative z-10 flex flex-1 items-center">

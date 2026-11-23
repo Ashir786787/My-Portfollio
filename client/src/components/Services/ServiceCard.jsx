@@ -31,7 +31,7 @@ function ServiceCard({ image, title, description, points = [], index = 0 }) {
       <h3 className="relative mt-6 font-display text-lg font-semibold text-white sm:text-xl">
         {title}
       </h3>
-      <p className="relative mt-2.5 text-sm leading-7 text-white/55">{description}</p>
+      <p className="relative mt-2.5 text-sm leading-7 text-white/70">{description}</p>
 
       {points.length > 0 && (
         <ul className="relative mt-5 space-y-2">

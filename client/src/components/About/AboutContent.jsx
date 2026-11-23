@@ -25,10 +25,10 @@ function AboutContent() {
       viewport={{ once: true, margin: "-80px" }}
       transition={{ duration: 0.6, delay: 0.1 }}
     >
-      <p className="mt-6 text-sm leading-7 text-white/55 sm:text-base sm:leading-8">
+      <p className="mt-6 text-sm leading-7 text-white/70 sm:text-base sm:leading-8">
         {about.description}
       </p>
-      <p className="mt-4 text-sm leading-7 text-white/55 sm:text-base sm:leading-8">
+      <p className="mt-4 text-sm leading-7 text-white/70 sm:text-base sm:leading-8">
         {about.descriptionTwo}
       </p>
 

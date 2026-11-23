@@ -8,7 +8,7 @@ function Testimonials() {
   return (
     <SectionWrapper
       id="testimonials"
-      className="relative overflow-hidden border-y border-white/[0.05] bg-base-2/50"
+      className="relative overflow-hidden border-y border-white/[0.05] bg-canvas-2/50"
     >
       <div
         aria-hidden="true"

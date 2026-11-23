@@ -3,7 +3,7 @@ import BackToTop from "./Common/BackToTop/BackToTop";
 
 function Layout({ children }) {
   return (
-    <div className="relative min-h-screen overflow-x-hidden bg-base text-white">
+    <div className="relative min-h-screen overflow-x-hidden bg-canvas text-white">
       {/* Ambient background */}
       <div aria-hidden="true" className="pointer-events-none fixed inset-0 z-0">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_120%_80%_at_50%_-10%,rgba(124,92,255,0.14),transparent_55%)]" />

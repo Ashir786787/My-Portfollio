@@ -59,7 +59,7 @@ function ProjectCard({
           </h3>
         </div>
 
-        <p className="mt-2.5 line-clamp-3 text-sm leading-7 text-white/55">
+        <p className="mt-2.5 line-clamp-3 text-sm leading-7 text-white/70">
           {description}
         </p>
 

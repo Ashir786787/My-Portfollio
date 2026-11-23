@@ -21,8 +21,8 @@ function TechMarquee() {
 
   return (
     <div className="relative overflow-hidden border-y border-white/[0.06] bg-white/[0.015] py-4">
-      <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-16 bg-gradient-to-r from-base to-transparent sm:w-28" />
-      <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-16 bg-gradient-to-l from-base to-transparent sm:w-28" />
+      <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-16 bg-gradient-to-r from-canvas to-transparent sm:w-28" />
+      <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-16 bg-gradient-to-l from-canvas to-transparent sm:w-28" />
       <div className="marquee-group flex" aria-label="Technologies I work with">
         <div
           className={`flex w-max shrink-0 items-center gap-10 pr-10 sm:gap-14 sm:pr-14 ${

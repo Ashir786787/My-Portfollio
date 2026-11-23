@@ -32,7 +32,7 @@ function SectionTitle({
         }`}
       />
       {description && (
-        <p className="mt-5 text-sm leading-7 text-white/50 sm:text-base">
+        <p className="mt-5 text-sm leading-7 text-white/70 sm:text-base">
           {description}
         </p>
       )}
