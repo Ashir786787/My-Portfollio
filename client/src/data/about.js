@@ -1,14 +1,15 @@
 const about = {
   title: "About Me",
-  subtitle: "Passion • Code • Creativity",
-  heading: "Building Modern Web Experiences with Passion",
-  description: `I'm Muhammad Ashir, a passionate MERN Stack Developer who enjoys transforming ideas into responsive, scalable, and user-friendly web applications. I focus on writing clean, maintainable code while creating modern user interfaces that provide exceptional user experiences.
-
-My goal is to continuously improve my skills, solve real-world problems, and contribute to impactful digital products through innovation and creativity.`,
-  education: "Bachelor's Degree in Data Science",
+  subtitle: "The person behind the code",
+  heading: "I turn ideas into fast, reliable and polished web products.",
+  description:
+    "I'm Muhammad Ashir, a MERN Stack Developer based in Pakistan. I build responsive, scalable applications with a strong focus on clean code, thoughtful interactions and maintainable architecture. My work sits at the intersection of engineering and design — where performance meets a great user experience.",
+  descriptionTwo:
+    "I enjoy solving real problems, learning new tools and collaborating with teams that care about quality. Whether it's a landing page, a dashboard or a full-stack platform, I care about the details that make software feel effortless.",
+  education: "Bachelor's in Data Science",
   experience: "MERN Stack Developer Intern",
   location: "Pakistan",
-  availability: "Available for Freelance & Full-Time",
+  availability: "Open to freelance & full-time",
   stats: [
     { number: "3+", label: "Years Experience" },
     { number: "10+", label: "Projects Completed" },

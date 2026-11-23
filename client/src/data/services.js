@@ -8,32 +8,46 @@ import api from "../assets/images/services/api.svg";
 export const services = [
   {
     title: "UI/UX Design",
-    description: "Creating beautiful and intuitive user interfaces with a focus on user experience.",
+    description:
+      "Interfaces designed around real users — clear, accessible and beautiful from wireframe to handoff.",
     image: uiUx,
+    points: ["Wireframes & prototypes", "Design systems", "Usability reviews"],
   },
   {
     title: "Frontend Development",
-    description: "Building responsive and performant web applications using modern frameworks.",
+    description:
+      "Responsive, component-driven frontends built with React and Tailwind for speed and consistency.",
     image: frontend,
+    points: ["React & Tailwind", "Responsive layouts", "Smooth animations"],
   },
   {
     title: "Backend Development",
-    description: "Developing robust server-side applications and RESTful APIs.",
+    description:
+      "Reliable server-side logic, clean data models and secure authentication for production workloads.",
     image: backend,
+    points: ["Node.js & Express", "Authentication", "Business logic"],
   },
   {
     title: "MERN Stack",
-    description: "End-to-end development using MongoDB, Express, React, and Node.js.",
+    description:
+      "End-to-end product development with MongoDB, Express, React and Node — one coherent stack.",
     image: mern,
+    points: ["Full-stack apps", "Database design", "Deployment"],
   },
   {
     title: "Responsive Design",
-    description: "Creating websites that work flawlessly across all devices and screen sizes.",
+    description:
+      "Layouts that adapt gracefully to every screen — from small phones to ultra-wide desktops.",
     image: responsive,
+    points: ["Mobile-first builds", "Cross-browser QA", "Fluid typography"],
   },
   {
     title: "API Integration",
-    description: "Integrating third-party services and APIs to extend functionality.",
+    description:
+      "Third-party services and custom APIs wired into your product with reliable error handling.",
     image: api,
+    points: ["REST APIs", "Payments & auth", "Data pipelines"],
   },
 ];
+
+export default services;

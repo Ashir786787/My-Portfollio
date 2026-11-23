@@ -8,15 +8,22 @@ import blog from "../assets/images/projects/blog.jpg";
 const projects = [
   {
     title: "Personal Portfolio",
-    description: "A modern and responsive portfolio website built using React, Tailwind CSS and Framer Motion.",
+    category: "Frontend",
+    year: "2026",
+    featured: true,
+    description:
+      "A modern, high-performance portfolio with smooth animations, an accessible design system and a fully responsive layout.",
     image: portfolio,
     technologies: ["React", "Tailwind", "Framer Motion"],
-    github: "#",
-    live: "#",
+    github: "https://github.com/Ashir786787",
+    live: "#home",
   },
   {
     title: "Dashboard UI",
-    description: "A full-stack admin dashboard with authentication, charts, and data management.",
+    category: "Full Stack",
+    year: "2025",
+    description:
+      "A full-stack admin dashboard with authentication, charts and complete data management workflows.",
     image: dashboard,
     technologies: ["React", "Node.js", "MongoDB"],
     github: "#",
@@ -24,7 +31,10 @@ const projects = [
   },
   {
     title: "E-Commerce Store",
-    description: "An online store with product listings, cart functionality, and payment integration.",
+    category: "Full Stack",
+    year: "2025",
+    description:
+      "An online storefront with product listings, cart state, checkout flows and payment integration.",
     image: ecommerce,
     technologies: ["React", "Express", "Stripe"],
     github: "#",
@@ -32,7 +42,10 @@ const projects = [
   },
   {
     title: "Task Manager",
-    description: "A productivity app for managing tasks with drag-and-drop and real-time updates.",
+    category: "Frontend",
+    year: "2024",
+    description:
+      "A productivity app for organising tasks with drag-and-drop, filters and real-time updates.",
     image: taskmanager,
     technologies: ["React", "Firebase", "Tailwind"],
     github: "#",
@@ -40,7 +53,10 @@ const projects = [
   },
   {
     title: "AI Chatbot",
-    description: "An intelligent chatbot interface powered by natural language processing.",
+    category: "AI",
+    year: "2025",
+    description:
+      "An intelligent chat interface powered by natural language processing and a clean conversational UI.",
     image: chatbot,
     technologies: ["React", "Python", "OpenAI"],
     github: "#",
@@ -48,7 +64,10 @@ const projects = [
   },
   {
     title: "Blog Platform",
-    description: "A feature-rich blogging platform with markdown support and user authentication.",
+    category: "Full Stack",
+    year: "2024",
+    description:
+      "A feature-rich publishing platform with markdown support, user accounts and content management.",
     image: blog,
     technologies: ["Next.js", "MDX", "MongoDB"],
     github: "#",

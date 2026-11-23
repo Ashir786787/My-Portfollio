@@ -1,24 +1,49 @@
 import { motion } from "framer-motion";
-import { FaStar } from "react-icons/fa";
+import { FaStar, FaQuoteRight } from "react-icons/fa";
 
-function TestimonialCard({ name, role, feedback, rating }) {
+function initials(name) {
+  return name
+    .split(" ")
+    .map((part) => part[0])
+    .slice(0, 2)
+    .join("");
+}
+
+function TestimonialCard({ name, role, feedback, rating, index = 0 }) {
   return (
-    <motion.div
-      whileHover={{ y: -8, scale: 1.02 }}
-      transition={{ duration: 0.3 }}
-      className="bg-white/5 border border-white/10 rounded-3xl p-6 md:p-8 backdrop-blur-xl"
+    <motion.figure
+      initial={{ opacity: 0, y: 24 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-60px" }}
+      transition={{ duration: 0.5, delay: index * 0.08 }}
+      className="card card-hover group relative flex h-full flex-col overflow-hidden p-6 sm:p-7"
     >
-      <div className="flex mb-6">
-        {[...Array(rating)].map((_, index) => (
-          <FaStar key={index} className="text-yellow-400 mr-1" />
+      <div className="card-spotlight" aria-hidden="true" />
+      <FaQuoteRight
+        aria-hidden="true"
+        className="absolute right-6 top-6 text-2xl text-white/[0.06] transition duration-500 group-hover:text-violet-400/20"
+      />
+
+      <div className="flex items-center gap-1" aria-label={`${rating} out of 5 stars`}>
+        {[...Array(rating)].map((_, starIndex) => (
+          <FaStar key={starIndex} className="text-[0.7rem] text-amber-300" />
         ))}
       </div>
-      <p className="text-gray-300 leading-8 italic">"{feedback}"</p>
-      <div className="mt-8">
-        <h3 className="text-xl font-semibold">{name}</h3>
-        <p className="text-gray-400">{role}</p>
-      </div>
-    </motion.div>
+
+      <blockquote className="relative mt-5 flex-1 text-sm leading-7 text-white/60">
+        &ldquo;{feedback}&rdquo;
+      </blockquote>
+
+      <figcaption className="relative mt-6 flex items-center gap-3 border-t border-white/[0.06] pt-5">
+        <span className="flex h-10 w-10 items-center justify-center rounded-full border border-violet-400/20 bg-gradient-to-br from-violet-500/30 to-cyan-400/15 text-xs font-semibold text-violet-100">
+          {initials(name)}
+        </span>
+        <span>
+          <span className="block text-sm font-semibold text-white">{name}</span>
+          <span className="block text-xs text-white/50">{role}</span>
+        </span>
+      </figcaption>
+    </motion.figure>
   );
 }
 

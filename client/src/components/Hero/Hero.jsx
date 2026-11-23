@@ -7,14 +7,24 @@ function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-screen bg-[var(--bg-primary)] overflow-hidden pt-16 lg:pt-20"
+      className="relative flex min-h-[100svh] flex-col overflow-hidden pb-4 pt-28 sm:pt-32 lg:pt-36"
     >
-      <div className="absolute inset-0 opacity-[0.04] bg-[linear-gradient(to_right,#ffffff_1px,transparent_1px),linear-gradient(to_bottom,#ffffff_1px,transparent_1px)] bg-[size:70px_70px]" />
-      <div className="absolute top-24 left-10 w-[450px] h-[450px] bg-violet-700/20 blur-[180px] rounded-full" />
-      <div className="absolute bottom-0 right-0 w-[350px] h-[350px] bg-cyan-500/20 blur-[180px] rounded-full" />
+      <div aria-hidden="true" className="surface-grid absolute inset-0 -top-20" />
+      <div
+        aria-hidden="true"
+        className="orb -left-24 top-24 h-[360px] w-[360px] bg-violet-600/25 sm:h-[460px] sm:w-[460px]"
+      />
+      <div
+        aria-hidden="true"
+        className="orb -right-24 top-1/3 h-[320px] w-[320px] bg-cyan-500/15 sm:h-[420px] sm:w-[420px]"
+      />
+      <div
+        aria-hidden="true"
+        className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-base to-transparent"
+      />
 
-      <Container className="relative z-10 min-h-[calc(100vh-90px)] flex items-center">
-        <div className="grid lg:grid-cols-[46%_54%] items-center gap-6 xl:gap-2 w-full">
+      <Container className="relative z-10 flex flex-1 items-center">
+        <div className="grid w-full items-center gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-8 xl:gap-14">
           <HeroContent />
           <HeroImage />
         </div>

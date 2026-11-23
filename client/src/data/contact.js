@@ -1,4 +1,4 @@
-import { FaMapMarkerAlt, FaEnvelope, FaPhoneAlt, FaClock } from "react-icons/fa";
+import { FaMapMarkerAlt, FaEnvelope, FaClock, FaCheckCircle } from "react-icons/fa";
 
 export const contactInfo = [
   {
@@ -10,17 +10,16 @@ export const contactInfo = [
   {
     icon: FaMapMarkerAlt,
     label: "Location",
-    value: "Pakistan",
-  },
-  {
-    icon: FaPhoneAlt,
-    label: "Phone",
-    value: "+92 300 1234567",
-    href: "tel:+923001234567",
+    value: "Pakistan · Working worldwide",
   },
   {
     icon: FaClock,
+    label: "Response time",
+    value: "Within 24 hours",
+  },
+  {
+    icon: FaCheckCircle,
     label: "Availability",
-    value: "Mon-Fri, 9AM-6PM",
+    value: "Open to freelance & full-time",
   },
 ];

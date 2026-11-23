@@ -1,47 +1,22 @@
-import { motion } from "framer-motion";
-import { FaCode, FaLaptopCode, FaBriefcase } from "react-icons/fa";
-
-const stats = [
-  {
-    icon: <FaBriefcase />,
-    title: "3+ Years",
-    subtitle: "Experience",
-    position: "top-6 -left-8",
-  },
-  {
-    icon: <FaLaptopCode />,
-    title: "MERN",
-    subtitle: "Stack",
-    position: "bottom-20 -left-10",
-  },
-  {
-    icon: <FaCode />,
-    title: "Available",
-    subtitle: "For Work",
-    position: "bottom-8 right-0",
-  },
-];
+import about from "../../data/about";
 
 function HeroStats() {
   return (
-    <>
-      {stats.map((item, index) => (
-        <motion.div
-          key={index}
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.5 + index * 0.2 }}
-          className={`absolute ${item.position} hidden lg:flex items-center gap-3 bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl px-4 py-3 shadow-xl`}
-        >
-          <div className="text-violet-400 text-xl">{item.icon}</div>
-
-          <div>
-            <h4 className="font-semibold">{item.title}</h4>
-            <p className="text-sm text-gray-400">{item.subtitle}</p>
-          </div>
-        </motion.div>
+    <dl className="mt-9 grid max-w-md grid-cols-3 divide-x divide-white/10 overflow-hidden rounded-2xl border border-white/[0.08] bg-white/[0.025] py-4 backdrop-blur-md">
+      {about.stats.map((stat) => (
+        <div key={stat.label} className="px-2 text-center sm:px-3">
+          <dt className="sr-only">{stat.label}</dt>
+          <dd>
+            <span className="block text-lg font-bold text-white sm:text-2xl">
+              {stat.number}
+            </span>
+            <span className="mt-0.5 block text-[0.6rem] leading-tight text-white/50 sm:text-[0.7rem]">
+              {stat.label}
+            </span>
+          </dd>
+        </div>
       ))}
-    </>
+    </dl>
   );
 }
 
