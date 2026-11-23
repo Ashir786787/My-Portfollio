@@ -29,8 +29,8 @@ function Footer() {
           <div>
             <Logo />
             <p className="mt-5 max-w-xs text-sm leading-7 text-white/50">
-              Full Stack Developer crafting fast, scalable and user-friendly
-              products with the MERN stack.
+              MERN Stack Developer crafting fast, scalable web and mobile
+              products, including Android and iOS apps.
             </p>
             <div className="mt-5 flex items-center gap-2">
               {socials.map(({ label, href, icon: Icon }) => (

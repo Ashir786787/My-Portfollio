@@ -41,10 +41,10 @@ function AboutImage() {
               </span>
               <div>
                 <p className="text-[0.78rem] font-semibold leading-tight text-white">
-                  MERN Stack Developer
+                  Web &amp; Mobile Developer
                 </p>
                 <p className="text-[0.62rem] text-white/55">
-                  React · Node · MongoDB
+                  React · Node · Android · iOS
                 </p>
               </div>
             </div>

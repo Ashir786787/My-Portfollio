@@ -31,7 +31,7 @@ function Projects() {
           align="left"
           subtitle="Selected work"
           title="Projects that solve real problems"
-          description="A mix of full-stack products and polished frontends. Each project was built with performance, accessibility and maintainability in mind."
+          description="A mix of web products, polished frontends and mobile experiences. Each project was built with performance, accessibility and maintainability in mind."
         />
 
         <div

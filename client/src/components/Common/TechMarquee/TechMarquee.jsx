@@ -11,6 +11,8 @@ const technologies = [
   "REST APIs",
   "Git",
   "Figma",
+  "Android",
+  "iOS",
 ];
 
 function TechMarquee() {

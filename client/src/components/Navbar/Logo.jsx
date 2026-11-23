@@ -13,11 +13,8 @@ function Logo({ onClick }) {
         <span className="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-violet-300/70 to-transparent" />
       </span>
       <span className="flex flex-col leading-none">
-        <span className="font-display text-[0.95rem] font-semibold tracking-tight text-white sm:text-base">
+        <span className="font-display text-base font-semibold tracking-tight text-white sm:text-lg">
           Muhammad Ashir
-        </span>
-        <span className="mt-1 hidden text-[0.6rem] font-medium uppercase tracking-[0.22em] text-white/50 sm:block lg:hidden xl:block">
-          Full Stack Developer
         </span>
       </span>
     </a>

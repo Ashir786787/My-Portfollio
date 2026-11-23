@@ -4,6 +4,7 @@ import backend from "../assets/images/services/backend.svg";
 import mern from "../assets/images/services/mern.svg";
 import responsive from "../assets/images/services/responsive.svg";
 import api from "../assets/images/services/api.svg";
+import mobile from "../assets/images/services/mobile.svg";
 
 export const services = [
   {
@@ -47,6 +48,13 @@ export const services = [
       "Third-party services and custom APIs wired into your product with reliable error handling.",
     image: api,
     points: ["REST APIs", "Payments & auth", "Data pipelines"],
+  },
+  {
+    title: "Android & iOS Apps",
+    description:
+      "Mobile applications for Android and iOS with polished interfaces, smooth performance and reliable API integration.",
+    image: mobile,
+    points: ["Android & iOS", "Mobile UI/UX", "App + API integration"],
   },
 ];
 

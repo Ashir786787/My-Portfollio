@@ -8,6 +8,9 @@ import {
   FaServer,
   FaDatabase,
   FaPalette,
+  FaAndroid,
+  FaApple,
+  FaMobileAlt,
 } from "react-icons/fa";
 import {
   SiJavascript,
@@ -51,6 +54,16 @@ const skills = [
     items: [
       { name: "MongoDB", icon: SiMongodb, level: "Advanced", value: 88 },
       { name: "MySQL", icon: SiMysql, level: "Intermediate", value: 74 },
+    ],
+  },
+  {
+    category: "Mobile Development",
+    icon: FaMobileAlt,
+    blurb: "Apps that feel native on Android and iOS.",
+    items: [
+      { name: "Android", icon: FaAndroid, level: "Intermediate", value: 78 },
+      { name: "iOS", icon: FaApple, level: "Intermediate", value: 76 },
+      { name: "Mobile UI/UX", icon: FaMobileAlt, level: "Advanced", value: 84 },
     ],
   },
   {

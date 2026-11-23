@@ -34,7 +34,7 @@ function HeroImage() {
           animate={{ y: [0, -12, 0] }}
           transition={floatTransition}
           src={profile}
-          alt="Muhammad Ashir, MERN Stack Developer"
+          alt="Muhammad Ashir, MERN Stack and Mobile App Developer"
           width="1000"
           height="667"
           fetchPriority="high"

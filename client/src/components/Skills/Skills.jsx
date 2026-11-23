@@ -25,7 +25,7 @@ function Skills() {
       <SectionTitle
         subtitle="My toolkit"
         title="Skills built through real projects"
-        description="A practical stack for designing, building and shipping full-stack products — from the first wireframe to production deployment."
+        description="A practical stack for designing, building and shipping web and mobile products — from the first wireframe to production deployment."
       />
 
       <div className="mt-14 grid items-start gap-5 lg:grid-cols-12">
@@ -33,9 +33,7 @@ function Skills() {
           <SkillCategory
             key={category.category}
             {...category}
-            className={
-              index < 2 ? "lg:col-span-6" : index === 2 ? "lg:col-span-5" : "lg:col-span-7"
-            }
+            className={index < 2 ? "lg:col-span-6" : "lg:col-span-4"}
           />
         ))}
       </div>

@@ -12,8 +12,8 @@ export const experiences = [
     company: "Freelance",
     role: "Frontend Developer",
     description:
-      "Designed and developed responsive portfolio websites, landing pages and dashboards for clients with a focus on performance and clarity.",
-    technologies: ["React", "Tailwind", "Figma"],
+      "Designed and developed responsive websites, dashboards and Android/iOS mobile apps for clients with a focus on performance and clarity.",
+    technologies: ["React", "Tailwind", "Mobile"],
   },
   {
     year: "2024",
